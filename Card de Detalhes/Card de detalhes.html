@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        .f {
+            height: 100px;
+            width: 100px;
+        }
+
+        .father {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        #fa {
+            width: 300px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-left-width: 2px;
+            border-left-style: solid;
+            border-top-width: 2px;
+            border-top-style: solid;
+            border-right-width: 2px;
+            border-right-style: solid;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            margin-right: 10px;
+            border-radius: 18px;
+            box-shadow: 0px 0px 13px black;
+        }
+
+        #insta {
+            width: 300px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-left-width: 2px;
+            border-left-style: solid;
+            border-top-width: 2px;
+            border-top-style: solid;
+            border-right-width: 2px;
+            border-right-style: solid;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            margin-right: 10px;
+            border-radius: 18px;
+            box-shadow: 0px 0px 13px black;
+            /*background-image: linear-gradient(to bottom, #D03B9B, #4168C9);*/
+        }
+
+        #in {
+            width: 300px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-left-width: 2px;
+            border-left-style: solid;
+            border-top-width: 2px;
+            border-top-style: solid;
+            border-right-width: 2px;
+            border-right-style: solid;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            margin-right: 10px;
+            border-radius: 18px;
+            box-shadow: 0px 0px 13px black;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 19pt;
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .seg,.ter {
+            font: bold 22pt arial, sans-serif;
+            padding: 11pt;
+            border-radius: 34px;
+            background-color: white;
+            border-style: outset;
+            border-color: black;
+        }
+        .seg:hover {
+            cursor: pointer;
+            transition: 6ms;
+            text-shadow: none;
+            color: #3B579D;
+        }
+        .ter:hover {
+            cursor: pointer;
+            transition: 6ms;
+            text-shadow: none;
+            color: #D03B9B;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center; font-family: 'Poppins', sans-serif; font-size: 30pt;
+    text-transform: uppercase; color: #1f1f1f;">Card de detalhes</h1>
+    <div class="father">
+        <div id="fa" onmouseenter="entrar()" onmousemove="move ()" onmouseout="sair()">
+                <img src="Imagens/facebook3.png" alt="" class="f">
+                <div><h1>FACEBOOK</h1>
+            <p id="fa1" onmouseenter="entrap()">Este é meu facebook, há épocas que eu meixo bastante e há épocas que eu
+                meixo
+                pouco como atualmente.
+            </p></div>
+            <div><a href="https://www.facebook.com/Gabrielbelizarioribeiro">
+                <input type="button" value="Seguir" class="seg"></a></div>
+        </div>
+        <div id="insta" onmouseenter="entrai()" onmousemove="mover ()" onmouseout="sairIN()">
+                <img src="Imagens/instagram.png" alt="" class="f">
+                <h1>INSTAGRAM</h1>
+            <p>Meu instagram que eu costumo usar muito, pode ser que eu pare
+                mais eu não garanto isso. Pra mim, lá tem muito mais conteúdo do que o facebook.
+                Me refiro a meu próprio perfil.
+            </p>
+            <a href="https://www.instagram.com/gabriel_belizarioribeiro/?hl=pt-br">
+                <input type="button" value="Seguir" class="ter">
+            </a>
+        </div>
+        <div id="in" onmousemove="movin ()" onmouseout="sailin ()">
+            <a href="https://www.linkedin.com/in/gabriel-belizario-90151617a/">
+                <img src="Imagens/linkedin2.png" alt="" class="f">
+            </a>
+            <h1>LINKEDIN</h1>
+            <p>
+                Meu perfil do linkedin é repleto de informações sobre minhas habilidade. Programação à marketing
+                digital,
+                tem de tudo lá.
+            </p>
+            
+        </div>
+    </div>
+    <script>
+        var fac = window.document.getElementById('fa')
+        var it = window.document.getElementById('insta')
+        var lin = window.document.getElementById('in')
+
+        function entrar() {
+            fac.style.backgroundColor = '#3B579D'
+            fac.style.color = 'white'
+
+        }
+        function entrai() {
+            it.style.backgroundImage = 'linear-gradient(to bottom, #D03B9B, #4168C9)'
+            it.style.color = 'white'
+        }
+
+        function move() {
+            fac.style.backgroundColor = '#3B579D'
+            fac.style.color = 'white'
+        }
+        function mover() {
+            it.style.backgroundImage = 'linear-gradient(to bottom, #D03B9B, #4168C9)'
+            it.style.color = 'white'
+        }
+        function movin() {
+            lin.style.backgroundColor = '#0077B7'
+            lin.style.color = 'white'
+        }
+        function sair() {
+            fac.style.backgroundColor = 'white'
+            fac.style.color = 'black'
+        }
+        function sairIN() {
+            it.style.backgroundImage = 'linear-gradient(to bottom, white, white)'
+            it.style.color = 'black'
+        }
+        function sailin() {
+            lin.style.backgroundColor = 'white'
+            lin.style.color = 'black'
+        }
+    </script>
+
+
+</body>
+
+</html>
