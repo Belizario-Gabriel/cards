@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tt {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            vertical-align: middle;
+            min-height: 100px;
+            display: table-cell;
+            font-size: 88px;
+        }
+        #tp {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            vertical-align: middle;
+            min-height: 100px;
+            display: table-cell;
+            font-size: 88px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tt" class="tt" onmouseenter="enter ()" onmousemove="move ()" onmouseout="out ()"> <p id="t" onmouseenter="enter ()" onmousemove="move ()" onmouseout="out ()">test</p></div>
+    <div id="tp" onmouseenter="entrar ()" onmouseout="sair ()">test 2</div>
+
+    <script>
+        var TA = window.document.getElementById('tt')
+        var TB = window.document.getElementById ('tp')
+
+        function enter () {
+            TA.style.backgroundColor = 'green'
+        }
+        function move () {
+            TA.style.backgroundColor = 'green'
+        }
+        function entrar () {
+            TB.style.backgroundColor = 'blue'
+        }
+
+        function out () {
+            TA.style.backgroundColor = 'red'
+        }
+        function sair () {
+            TB.style.backgroundColor = 'purple'
+        }
+    </script>
+</body>
+</html>
